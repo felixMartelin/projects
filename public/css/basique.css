@@ -1,0 +1,9 @@
+body { 
+
+    padding-left: 10px;
+}
+.footer {
+    border-top: 10px solid #ccc;
+    padding-top: 10px;
+    text-align: center;
+}
