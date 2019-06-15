@@ -26,32 +26,32 @@
                         Les Brawlers
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="brawler/4"> Nita </a>
-                        <a class="dropdown-item" href="brawler/3"> Jessy </a>
-                        <a class="dropdown-item" href="brawler/1"> Shelly </a>
-                        <a class="dropdown-item" href="brawler/2"> Colt </a>
-                        <a class="dropdown-item" href="brawler/5"> Bull </a>
-                        <a class="dropdown-item" href="brawler/6"> Brock </a>
-                        <a class="dropdown-item" href="brawler/7"> Dynamike </a>
-                        <a class="dropdown-item" href="brawler/8"> Bô </a>
-                        <a class="dropdown-item" href="brawler/9"> El Costo</a>
-                        <a class="dropdown-item" href="brawler/9"> Bartaba </a>
-                        <a class="dropdown-item" href="brawler/11"> Poco </a>
-                        <a class="dropdown-item" href="brawler/12"> Rosa </a>
-                        <a class="dropdown-item" href="brawler/14"> Ricochet </a>
-                        <a class="dropdown-item" href="brawler/15"> Darryl </a>
-                        <a class="dropdown-item" href="brawler/13"> Penny </a>
-                        <a class="dropdown-item" href="brawler/16"> Carl </a>
-                        <a class="dropdown-item" href="brawler/17"> Polly </a>
-                        <a class="dropdown-item" href="brawler/18"> Pam </a>
-                        <a class="dropdown-item" href="brawler/19"> Frank </a>
-                        <a class="dropdown-item" href="brawler/20"> Billie </a>
-                        <a class="dropdown-item" href="brawler/22"> Tara </a>
-                        <a class="dropdown-item" href="brawler/23"> D'jinn </a>
-                        <a class="dropdown-item" href="brawler/21"> Mortis </a>
-                        <a class="dropdown-item" href="brawler/26"> Léon </a>
-                        <a class="dropdown-item" href="brawler/25"> Corbac </a>
-                        <a class="dropdown-item" href="brawler/24"> Spike </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/4') }}"> Nita </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/3') }}"> Jessy </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/1') }}"> Shelly </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/2') }}"> Colt </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/5') }}"> Bull </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/6') }}"> Brock </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/7') }}"> Dynamike </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/8') }}"> Bô </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/9') }}"> El Costo</a>
+                        <a class="dropdown-item" href="{{ url('/brawler/10') }}"> Bartaba </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/12') }}"> Poco </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/13') }}"> Rosa </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/14') }}"> Ricochet </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/15') }}"> Darryl </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/13') }}"> Penny </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/16') }}"> Carl </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/17') }}"> Polly </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/18') }}"> Pam </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/19') }}"> Frank </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/20') }}"> Billie </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/22') }}"> Tara </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/23') }}"> D'jinn </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/21') }}"> Mortis </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/26') }}"> Léon </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/25') }}"> Corbac </a>
+                        <a class="dropdown-item" href="{{ url('/brawler/24') }}"> Spike </a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
