@@ -1,5 +1,6 @@
 create database if not exists Brawler character set utf8 collate utf8_unicode_ci;
 use Brawler;
+grant all privileges on Brawler.* to 'felixMartelin'@'localhost' identified by 'secret';
 create table Brawler (
 IdBrawler integer not null primary key auto_increment,
 NomBrawler varchar(45) not null,
