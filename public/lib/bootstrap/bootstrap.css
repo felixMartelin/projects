@@ -41,6 +41,11 @@
   box-sizing: border-box;
 }
 
+.ClassPersoScroll {
+  height:150px;
+  overflow-y: scroll;
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;

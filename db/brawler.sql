@@ -47,7 +47,7 @@ grâce à son super, est Grand Nounours.",
 5320 , 1036 , 560 , "Bonne patte" , "Nita recouvre 500 points de santé quand son ours inflige des dégâts. Son ours recouvre aussi 500 point de santé lorsque Nita inflige des dégâts.");
 
 insert into Brawler values (5, "Bull", "commun", "Le fusil de bull fait des dégâts incroyable à courte portée. Il tire de nombreux plombs infligeant de lourds dégâts
-ce qui fait de lui un tank très efficasse. Il aime aller au contact grâce à son super qui le fait charger en avant détruisant murs et ennemis.",
+ce qui fait de lui un tank très efficasse. Il aime aller au  contact grâce à son super qui le fait charger en avant détruisant murs et ennemis.",
 7280 , 560 , 1120 , "Berserk" , "Quand bull a moins de 40% de santé, il recharge deux fois plus vite.");
 
 insert into Brawler values (6, "Brock", "commun", "Brock lance des roquettes explosives à longue portée. Son super? Une volée de roquettes qui détruit tous les obstacles

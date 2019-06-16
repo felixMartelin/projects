@@ -4,9 +4,19 @@
     Page Brawlers
     @endsection
 
+@section('vignette')
+
+    <img src="{{asset('/img/logo2.png')}}" width="10%" height="10%">
+
+    @endsection
+
 @section('titreItem')
     Les brawlers
     @endsection
+
+@section('pageCourante')
+        <h1 class="text-center" > Liste de tous les brawlers </h1>
+@endsection
 
 @section('contenu')
     @foreach($lesbrawlers as $brawler)

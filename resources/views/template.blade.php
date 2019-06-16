@@ -10,48 +10,49 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
     <div class="container">
 
-        <img src="../img/logo.png" width="10%" height="10%">
+        @yield('vignette')
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
+            @yield('pageCourante')
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="accueil">Accueil
+                    <a class="nav-link" href="{{ url('/accueil') }}">Accueil
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="brawlers" id="navbardrop" data-toggle="dropdown">
                         Les Brawlers
                     </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="{{ url('/brawler/4') }}"> Nita </a>
-                        <a class="dropdown-item" href="{{ url('/brawler/3') }}"> Jessy </a>
-                        <a class="dropdown-item" href="{{ url('/brawler/1') }}"> Shelly </a>
-                        <a class="dropdown-item" href="{{ url('/brawler/2') }}"> Colt </a>
-                        <a class="dropdown-item" href="{{ url('/brawler/5') }}"> Bull </a>
-                        <a class="dropdown-item" href="{{ url('/brawler/6') }}"> Brock </a>
-                        <a class="dropdown-item" href="{{ url('/brawler/7') }}"> Dynamike </a>
-                        <a class="dropdown-item" href="{{ url('/brawler/8') }}"> Bô </a>
-                        <a class="dropdown-item" href="{{ url('/brawler/9') }}"> El Costo</a>
-                        <a class="dropdown-item" href="{{ url('/brawler/10') }}"> Bartaba </a>
-                        <a class="dropdown-item" href="{{ url('/brawler/12') }}"> Poco </a>
-                        <a class="dropdown-item" href="{{ url('/brawler/13') }}"> Rosa </a>
-                        <a class="dropdown-item" href="{{ url('/brawler/14') }}"> Ricochet </a>
-                        <a class="dropdown-item" href="{{ url('/brawler/15') }}"> Darryl </a>
-                        <a class="dropdown-item" href="{{ url('/brawler/13') }}"> Penny </a>
-                        <a class="dropdown-item" href="{{ url('/brawler/16') }}"> Carl </a>
-                        <a class="dropdown-item" href="{{ url('/brawler/17') }}"> Polly </a>
-                        <a class="dropdown-item" href="{{ url('/brawler/18') }}"> Pam </a>
-                        <a class="dropdown-item" href="{{ url('/brawler/19') }}"> Frank </a>
-                        <a class="dropdown-item" href="{{ url('/brawler/20') }}"> Billie </a>
-                        <a class="dropdown-item" href="{{ url('/brawler/22') }}"> Tara </a>
-                        <a class="dropdown-item" href="{{ url('/brawler/23') }}"> D'jinn </a>
-                        <a class="dropdown-item" href="{{ url('/brawler/21') }}"> Mortis </a>
-                        <a class="dropdown-item" href="{{ url('/brawler/26') }}"> Léon </a>
-                        <a class="dropdown-item" href="{{ url('/brawler/25') }}"> Corbac </a>
-                        <a class="dropdown-item" href="{{ url('/brawler/24') }}"> Spike </a>
+                    <div class="dropdown-menu ClassPersoScroll">
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/4') }}">@yield('puce') Nita </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/3') }}">@yield('puce') Jessy </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/1') }}">@yield('puce') Shelly </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/2') }}">@yield('puce') Colt </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/5') }}">@yield('puce') Bull </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/6') }}">@yield('puce') Brock </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/7') }}">@yield('puce') Dynamike </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/8') }}">@yield('puce') Bô </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/9') }}">@yield('puce') El Costo</a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/10') }}">@yield('puce') Bartaba </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/12') }}">@yield('puce') Poco </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/13') }}">@yield('puce') Rosa </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/14') }}">@yield('puce') Ricochet </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/15') }}">@yield('puce') Darryl </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/13') }}">@yield('puce') Penny </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/16') }}">@yield('puce') Carl </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/17') }}">@yield('puce') Polly </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/18') }}">@yield('puce') Pam </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/19') }}">@yield('puce') Frank </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/20') }}">@yield('puce') Billie </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/22') }}">@yield('puce') Tara </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/23') }}">@yield('puce') D'jinn </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/21') }}">@yield('puce') Mortis </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/26') }}">@yield('puce') Léon </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/25') }}">@yield('puce') Corbac </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/24') }}">@yield('puce') Spike </a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -59,8 +60,8 @@
                     Top Ladder
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="ladder"> Mondial </a>
-                        <a class="dropdown-item" href="ladderFr"> Français </a>
+                        <a class="dropdown-item" href="{{ url('/ladder') }}"> Mondial </a>
+                        <a class="dropdown-item" href="{{ url('/ladderFr') }}"> Français </a>
                     </div>
                 </li>
             </ul>
