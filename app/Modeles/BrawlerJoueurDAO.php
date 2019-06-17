@@ -10,7 +10,7 @@ class BrawlerJoueurDAO extends Model
 {
     public function getLesBrawlersJoueur($id)
     {
-        $Brawlers= DB::table('BrawlerJoueur')->where('IdBrawlerJoueur',$id)->get();
+        $Brawlers= DB::table('BrawlerJoueur')->where('IdBrawlerJoueur',$id)->where('DebloquerBrawlerJoueur' , '1')->get();
         $LesBrawlers=array();
 
         foreach($Brawlers as $brawler)
