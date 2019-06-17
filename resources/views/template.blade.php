@@ -33,7 +33,7 @@
                         <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawlers') }}">@yield('puce') Tous les brawlers</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/4') }}">@yield('puce') Nita </a>
-                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/3') }}">@yield('puce') Jessy </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/3') }}">@yield('puce') Jessie </a>
                         <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/1') }}">@yield('puce') Shelly </a>
                         <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/2') }}">@yield('puce') Colt </a>
                         <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/5') }}">@yield('puce') Bull </a>

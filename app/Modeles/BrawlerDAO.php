@@ -67,9 +67,9 @@ class BrawlerDAO extends Model
         return $LeBrawler;
     }
 
-    public function getJessy()
+    public function getJessie()
     {
-        $Brawlers= DB::table('Brawler')->where('NomBrawler' , 'Jessy')->get();
+        $Brawlers= DB::table('Brawler')->where('NomBrawler' , 'Jessie')->get();
         $LeBrawler = array();
         foreach ($Brawlers as $brawler)
         {
@@ -81,8 +81,12 @@ class BrawlerDAO extends Model
     public function getPenny()
     {
         $Brawlers= DB::table('Brawler')->where('NomBrawler' , 'Penny')->get();
-        $Brawler = $this->creerObjetMetier($Brawlers);
-        return $Brawler;
+        $LeBrawler = array();
+        foreach ($Brawlers as $brawler)
+        {
+            $LeBrawler[0] = $this->creerObjetMetier($brawler);
+        }
+        return $LeBrawler;
     }
 
     public function getBull()
@@ -208,7 +212,7 @@ class BrawlerDAO extends Model
 
     public function getDjinn()
     {
-        $Brawlers= DB::table('Brawler')->where('NomBrawler' , 'Djinn')->get();
+        $Brawlers= DB::table('Brawler')->where('NomBrawler' , 'D\'jinn')->get();
         $LeBrawler = array();
         foreach ($Brawlers as $brawler)
         {

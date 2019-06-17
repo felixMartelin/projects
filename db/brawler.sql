@@ -10,7 +10,7 @@ VieBrawler integer not null,
 DegatBrawler integer not null,
 DegatSuperBrawler integer,
 StarPowerBrawler varchar(45) not null,
-DescStarPower varchar(200) not null
+DescStarPower varchar(300) not null
 ) engine=innodb character set utf8 collate utf8_unicode_ci;
 
 create table Joueur (

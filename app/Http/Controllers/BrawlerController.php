@@ -27,7 +27,7 @@ class BrawlerController extends Controller
                 $lebrawler=$brawler->getColt();
                 break;
             case 3 :
-                $lebrawler=$brawler->getJessy();
+                $lebrawler=$brawler->getJessie();
                 break;
             case 4 :
                 $lebrawler=$brawler->getNita();
