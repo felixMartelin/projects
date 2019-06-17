@@ -1,5 +1,5 @@
-create database if not exists Brawler character set utf8 collate utf8_unicode_ci;
-use Brawler;
+create database if not exists felixmartelin_brawler character set utf8 collate utf8_unicode_ci;
+use felixmartelin_brawler;
 CREATE user if not exists 'felixMartelin'@'localhost' identified by 'secret';
 grant all privileges on Brawler.* to 'felixMartelin'@'localhost' identified by 'secret';
 
