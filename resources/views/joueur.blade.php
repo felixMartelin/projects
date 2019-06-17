@@ -6,7 +6,7 @@
 
 @section('vignette')
 
-    <img src="{{asset('img/logo2.png')}}"  width="10%" height="10%">
+    <img src="{{asset('img/star-power.png')}}"  width="10%" height="10%">
 
     @endsection
 
@@ -26,6 +26,7 @@
 @section('contenu')
     <div class="container">
         @foreach($lejoueur as $joueur)
+            <div class="row">
                 <div class="col-sm border-right">
                     <h2> Fiche Descriptive du Joueur :</h2>
                     <br/>
@@ -39,11 +40,12 @@
                     <h2> Statistiques des Brawlers : </h2>
                     <br/>
                     @foreach($lesbrawlers as $brawler)
-                    <p> <b> Id Du Brawler </b> : </b> {{ $brawler->getIdBrawler() }} </p>
-                    <p> <b> Trohpée du Brawler</b> : {{ $brawler->getTropheeBrawler() }} </p>
-                    <p> <b> Niveau du Brawler </b> : {{ $brawler->getNiveauBrawler() }} </p>
+                        <p> <b> Id Du Brawler </b> : </b> {{ $brawler->getIdBrawler() }} </p>
+                        <p> <b> Trohpée du Brawler</b> : {{ $brawler->getTropheeBrawler() }} </p>
+                        <p> <b> Niveau du Brawler </b> : {{ $brawler->getNiveauBrawler() }} </p>
                         <br/>
-                        @endforeach
+                    @endforeach
                 </div>
             </div>
+    </div>
     @endsection
