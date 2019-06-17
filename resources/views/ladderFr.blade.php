@@ -21,7 +21,7 @@
 @endsection
 
 @section('contenu')
-    <table class="table table-bordered table-striped">
+    <table class="table table-bordered table-striped table-hover">
         <thead>
         <th> Nom Du Joueur </th>
         <th> Trophées Actuels Du Joueur </th>

@@ -19,7 +19,7 @@
 
 @section('pageCourante')
     @foreach($lebrawler as $brawler)
-    <h1 class="text-left text-danger "> - {{$brawler->getNomBrawler()}}</h1>
+    <h1 class="text-left "> - {{$brawler->getNomBrawler()}}</h1>
     @endforeach
     @endsection
 
@@ -27,7 +27,7 @@
     <div class="container">
         @foreach($lebrawler as $brawler)
             <div class="row">
-                <div class="col-sm">
+                <div class="col-sm border-right">
                     <h2> Fiche Descriptive du Brawler :</h2>
                     <br/>
                     <p> <b>Nom du Brawler</b> : {{ $brawler->getNomBrawler() }} </p>

@@ -6,10 +6,13 @@
 {!! Html::style('css/basique.css') !!}
 <title>@yield('titrePage')</title>
 </head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
+    <style>
+        a {color : black}
+        a:hover {color : #A22222}
+    </style>
+<body class="bg-light">
+<nav class="navbar navbar-expand-lg static-top" style="background-color: #FFE25B; color: black ; width:100% ; height: 100% ; object-fit: cover">
     <div class="container">
-
         @yield('vignette')
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,10 +26,12 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="brawlers" id="navbardrop" data-toggle="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
                         Les Brawlers
                     </a>
-                    <div class="dropdown-menu ClassPersoScroll">
+                    <div class="dropdown-menu ClassPersoScroll" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawlers') }}">@yield('puce') Tous les brawlers</a>
+                        <div class="dropdown-divider"></div>
                         <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/4') }}">@yield('puce') Nita </a>
                         <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/3') }}">@yield('puce') Jessy </a>
                         <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/brawler/1') }}">@yield('puce') Shelly </a>
@@ -69,7 +74,7 @@
     </div>
 </nav>
 <header>
-    <h1>@yield('titreItem')</h1>
+    <h1 style="text-align: center">@yield('titreItem')</h1>
 </header>
 @yield('contenu')
 
