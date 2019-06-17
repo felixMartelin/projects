@@ -23,6 +23,7 @@
 @section('contenu')
     <table class="table table-bordered table-striped table-hover">
         <thead>
+        <th> ID Du Joueur </th>
         <th> Nom Du Joueur </th>
         <th> Trophées Actuels Du Joueur </th>
         <th> Trophées Max Du Joueur </th>
@@ -31,7 +32,8 @@
 
         @foreach($lesjoueurs as $joueur)
             <tr>
-                <td> {{ $joueur->getNomJoueur() }}</td>
+                <td> {{ $id = $joueur->getIdJoueur() }}</td>
+                <td>  <a href="{{ url('/joueur/'.$id) }}"> {{ $joueur->getNomJoueur() }} </a></td>
                 <td> {{ $joueur->getTropheeJoueur() }}</td>
                 <td> {{ $joueur->getTropheeMaxJoueur() }}</td>
                 <td> {{ $joueur->getRangJoueur() }}</td>

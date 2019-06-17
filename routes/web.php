@@ -22,3 +22,5 @@ Route::get('/ladder', 'JoueurController@getJoueurs');
 Route::get('/ladderFr', 'JoueurController@getJoueursFrancais');
 
 Route::get('/brawler/{id}' , 'BrawlerController@getUnBrawler');
+
+Route::get('/joueur/{id}' , 'JoueurController@getUnJoueur');

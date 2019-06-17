@@ -37,6 +37,18 @@ class JoueurDAO extends Model
         return $LesJoueurs;
     }
 
+    public function getUnJoueur($id)
+    {
+        $Joueurs= DB::table('Joueur')->where('IdJoueur',$id)->get();
+        $LesJoueurs=array();
+        foreach($Joueurs as $joueur)
+        {
+            $LesJoueurs[0]=$this->creerObjetMetier($joueur);
+        }
+
+        return $LesJoueurs;
+    }
+
 
     public function creerObjetMetier(\stdClass $unJoueur)
     {
