@@ -65,8 +65,8 @@
                     Top Ladder
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="{{ url('/ladder') }}"> Mondial </a>
-                        <a class="dropdown-item" href="{{ url('/ladderFr') }}"> Français </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/ladder') }}">@yield('puce') Mondial </a>
+                        <a class="dropdown-item list-group-item-action list-group-item-light" href="{{ url('/ladderFr') }}">@yield('puce') Français </a>
                     </div>
                 </li>
             </ul>

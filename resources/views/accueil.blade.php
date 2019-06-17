@@ -25,30 +25,30 @@
     ainsi que les statistiques détaillées de chaques Brawlers.</h4>
     <div class="container">
         <div class="row justify-content-center">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                 </ol>
-                <div class="carousel-inner" style="heigh:1200px; width:700px">
+                <div class="carousel-inner" style="heigh:1200px; width:700px" data-interval="3000">
                     <div class="carousel-item active">
                         <a href="https://www.youtube.com/watch?v=CaryjOdYFa0" target="_blank">
                             <img src="{{asset('img/video1-800.jpg')}}" class="d-block w-100" width="20%" heigh="20%">
                         </a>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-interval="3000">
                         <a href="https://www.youtube.com/watch?v=KLfqHkyxDVM" target="_blank">
                             <img src="{{asset('img/video2-800.jpg')}}" class="d-block w-100" width="20%" heigh="20%">
                         </a>
                     </div>
-                    <div class="carousel-item ">
+                    <div class="carousel-item " data-interval="3000">
                         <a href="https://www.youtube.com/watch?v=ZI1zBx1NHpE" target="_blank">
                             <img src="{{asset('img/video3-800.jpg')}}" class="d-block w-100" width="20%" heigh="20%">
                         </a>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-interval="3000">
                         <a href="https://www.youtube.com/watch?v=ss48H4HFDB0" target="_blank">
                             <img src="{{asset('img/video4-800.jpg')}}" class="d-block w-100" width="20%" heigh="20%">
                         </a>
